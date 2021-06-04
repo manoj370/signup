@@ -1,0 +1,18 @@
+<div class="row">
+<form [formGroup]="datepickerform">
+  <div  class="col-sm-6">
+
+<input type="text" ngxDaterangepickerMd  [ngModel]="selected" (change)="datepicker($event)"  class="form-control"/>
+</div>
+</form>
+
+<div class="col-sm-6">
+
+    <select>
+      <option>1 month</option>
+      <option>3 months</option>
+      <option>6 months</option>
+      <option>1year</option>
+    </select>
+    </div>
+</div>
